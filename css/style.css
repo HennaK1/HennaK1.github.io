@@ -63,6 +63,7 @@ body {
   color: white;
   font-family: "Roboto";
   font-size: 18px;
+  -webkit-text-stroke: 0.5px #ffffff;
 }
 
 @media screen and (max-width: 768px) {
