@@ -18,11 +18,42 @@ body {
 .logo-text h1 {
   font-size: 40px;
 }
+.contact-text {
+  width: 90%;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%, -50%);
+  font-family: "Roboto Slab";
+  text-align: center;
+  color: rgb(255, 255, 255);
+  letter-spacing: 3px;
+  -webkit-text-stroke: 1px #ffffff;
+}
+.navbar-container {
+  background-color: #00000085;
+  height: 60px;
+  position: relative;
+}
 
 .bg-img {
   /* The image used */
   background: linear-gradient(to top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.7)),
     url("../images/headerImg.jpg") no-repeat center center;
+  min-height: 100vh;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* Ensure the image covers the entire viewport */
+  /* Keep the background fixed relative to the viewport */
+  background-attachment: fixed;
+  /* Needed to position the navbar */
+  position: relative;
+}
+.bg-img2 {
+  /* The image used */
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.7)),
+    url("../images/contactheaderImg.jpg") no-repeat center center;
   min-height: 100vh;
   /* Center and scale the image nicely */
   background-position: center;
@@ -45,6 +76,12 @@ body {
   top: 30%;
   width: 100%;
 }
+.navbar2 {
+  position: absolute;
+  justify-content: center;
+  top: 30%;
+  width: 100%;
+}
 
 .nav-links {
   list-style-type: none;
@@ -53,8 +90,28 @@ body {
   display: flex; /* Align links horizontally */
   justify-content: center; /* Center links horizontally */
 }
+.nav-links2 {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Align links horizontally */
+  justify-content: center; /* Center links horizontally */
+}
+.nav-links li a:hover {
+  color: black;
+  text-decoration: none;
+  -webkit-text-stroke: 0;
+}
+.nav-links2 li a:hover {
+  color: rgba(94, 94, 94, 0.683);
+  text-decoration: none;
+  -webkit-text-stroke: 0;
+}
 
 .nav-links li {
+  margin: 0 10px; /* Adjust spacing between links */
+}
+.nav-links2 li {
   margin: 0 10px; /* Adjust spacing between links */
 }
 
@@ -64,6 +121,62 @@ body {
   font-family: "Roboto";
   font-size: 18px;
   -webkit-text-stroke: 0.5px #ffffff;
+}
+.nav-links2 li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto";
+  font-size: 18px;
+  -webkit-text-stroke: 0.5px #ffffff;
+}
+.contact-container {
+  background-color: rgba(0, 0, 0, 0.686);
+  width: 50%;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 70%;
+}
+#Name {
+  width: 300px;
+  height: 25px;
+  background-color: rgba(255 255 255 / 30%);
+  font-size: 18px;
+  color: white;
+  padding: 10px;
+}
+#Email {
+  width: 300px !important;
+  height: 25px;
+  background-color: rgba(255 255 255 / 30%);
+  font-size: 18px;
+  color: white;
+  padding: 10px;
+}
+#Message {
+  width: 300px !important;
+  height: 50px !important;
+  background-color: rgba(255 255 255 / 30%);
+  font-size: 18px;
+  color: white;
+}
+.fcf-label {
+  color: white;
+  font-family: "Roboto";
+  font-size: 20px;
+}
+.fcf-input-group {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.form-container {
+  margin-top: 50px;
 }
 
 @media screen and (max-width: 768px) {
