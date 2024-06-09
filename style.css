@@ -221,6 +221,18 @@ a.icon-link {
   margin: 40px;
   font-family: "Roboto Slab";
 }
+a {
+  text-decoration: none !important;
+  color: white;
+}
+a:visited {
+  color: white;
+  text-decoration: none !important;
+}
+a:active {
+  color: white;
+  text-decoration: none !important;
+}
 .footer-icons {
   display: flex;
   flex-direction: row;
