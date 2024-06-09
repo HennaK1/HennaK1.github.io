@@ -189,7 +189,7 @@ button#fcf-button {
   width: 100px !important;
 }
 input[type="submit"].fcf-btn-block {
-  background-color: #d9d9d9 !important;
+  background-color: #979797 !important;
 }
 .section-information {
   height: auto; /* Adjust height dynamically based on content */
