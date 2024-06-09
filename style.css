@@ -188,7 +188,9 @@ button#fcf-button {
   color: black !important; /* Set text color explicitly */
   width: 100px !important;
 }
-
+input[type="submit"].fcf-btn-block {
+  background-color: #d9d9d9 !important;
+}
 .section-information {
   height: auto; /* Adjust height dynamically based on content */
   min-height: 200px; /* Minimum height to prevent collapsing */
