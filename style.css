@@ -249,6 +249,10 @@ a:active {
   align-items: center;
   text-align: center;
 }
+.frontpage-info {
+  height: 100vh;
+  background-color: black;
+}
 
 @media screen and (max-width: 768px) {
   /* Use a different image or adjust the position for smaller screens */
@@ -285,8 +289,9 @@ a:active {
     margin-top: 5em;
   }
   .footer-icons p {
-    font-size: 10px;
+    font-size: 12px;
     margin-top: 10px;
+    margin-left: 0;
   }
   a.icon-link {
     display: flex;
@@ -299,15 +304,20 @@ a:active {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 530px) {
   .contact-container {
     min-width: 100%;
     min-height: 600px;
   }
   .nav-links2 li a {
-    font-size: 12px;
+    font-size: 10px;
   }
   button#fcf-button {
     width: 100px !important;
+  }
+}
+@media screen and (max-width: 375px) {
+  .nav-links2 li a {
+    font-size: 10px;
   }
 }
