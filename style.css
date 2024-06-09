@@ -54,7 +54,7 @@ body {
   /* The image used */
   background: linear-gradient(to top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.7)),
     url("../images/contactheaderImg.jpg") no-repeat center center;
-  min-height: 100vh;
+  height: 800px;
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
@@ -132,17 +132,17 @@ body {
 .contact-container {
   background-color: rgba(0, 0, 0, 0.686);
   width: 50%;
-  bottom: 0;
+  height: 500px; /* Adjust height as needed */
+  min-width: 350px;
+  position: absolute;
+  top: 400px;
+  left: 50%;
+  bottom: 200px;
+  transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  height: 500px;
-  min-width: 350px;
 }
 #name {
   width: 300px !important;
@@ -190,10 +190,11 @@ button#fcf-button {
 }
 
 .section-information {
-  height: 200px;
+  height: auto; /* Adjust height dynamically based on content */
+  min-height: 200px; /* Minimum height to prevent collapsing */
   background-color: black;
   display: flex;
-  justify-content: end;
+  justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
   flex-direction: column;
   margin: 0;
