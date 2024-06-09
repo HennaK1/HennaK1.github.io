@@ -180,12 +180,13 @@ body {
   margin-top: 50px;
 }
 button#fcf-button {
-  background-color: white;
+  background-color: white !important;
   height: 35px;
   font-family: "Roboto";
   font-size: 16px;
   border: none;
-  color: black; /* Set text color explicitly */
+  color: black !important; /* Set text color explicitly */
+  width: 100px;
 }
 button#fcf-button:hover {
   background-color: rgba(163, 163, 163, 0.71);
@@ -293,6 +294,6 @@ a.icon-link {
     font-size: 12px;
   }
   button#fcf-button {
-    width: 200px;
+    width: 100px;
   }
 }
