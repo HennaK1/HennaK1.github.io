@@ -141,12 +141,13 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  height: 70%;
+  height: 500px;
+  min-width: 350px;
 }
 #Name {
   width: 300px;
   height: 25px;
-  background-color: rgba(255 255 255 / 30%);
+  background-color: rgb(180 180 180 / 72%);
   font-size: 18px;
   color: white;
   padding: 10px;
@@ -154,15 +155,15 @@ body {
 #Email {
   width: 300px !important;
   height: 25px;
-  background-color: rgba(255 255 255 / 30%);
+  background-color: rgb(180 180 180 / 72%);
   font-size: 18px;
   color: white;
   padding: 10px;
 }
 #Message {
-  width: 300px !important;
-  height: 50px !important;
-  background-color: rgba(255 255 255 / 30%);
+  width: 315px !important;
+  height: 80px !important;
+  background-color: rgb(180 180 180 / 72%);
   font-size: 18px;
   color: white;
 }
@@ -177,6 +178,59 @@ body {
 }
 .form-container {
   margin-top: 50px;
+}
+button#fcf-button {
+  background-color: white;
+  height: 35px;
+  font-family: "Roboto";
+  font-size: 16px;
+  border: none;
+}
+button#fcf-button:hover {
+  background-color: rgba(163, 163, 163, 0.71);
+}
+.section-information {
+  height: 200px;
+  background-color: black;
+  display: flex;
+  justify-content: end;
+  align-items: center; /* Center vertically */
+  flex-direction: column;
+  margin: 0;
+  position: relative;
+}
+
+.section-information p {
+  color: white;
+  margin: 0;
+  margin-left: 10px;
+}
+.section-information h2 {
+  color: white;
+  margin: 0;
+}
+.icon-txt {
+  display: flex;
+  flex-direction: row;
+}
+a.icon-link {
+  display: flex;
+  text-decoration: none;
+  margin: 40px;
+  font-family: "Roboto Slab";
+}
+.footer-icons {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0px;
+  height: 100px;
+}
+.btn-container {
+  position: relative;
+}
+.footer-icons div {
+  align-items: center;
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -200,5 +254,40 @@ body {
   }
   .nav-links li {
     margin: 0 7px;
+  }
+  .footer-icons {
+    display: flex;
+    flex-direction: row;
+    margin-top: -30px;
+    height: 200px;
+  }
+
+  .footer-icons div {
+    align-items: center;
+    text-align: center;
+    margin-top: 5em;
+  }
+  .footer-icons p {
+    font-size: 10px;
+    margin-top: 10px;
+  }
+  a.icon-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+  .section-information h2 {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .contact-container {
+    min-width: 100%;
+    min-height: 600px;
+  }
+  .nav-links2 li a {
+    font-size: 12px;
   }
 }
