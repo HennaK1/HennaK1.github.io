@@ -188,9 +188,7 @@ button#fcf-button {
   color: black !important; /* Set text color explicitly */
   width: 100px !important;
 }
-button#fcf-button:hover {
-  background-color: rgba(163, 163, 163, 0.71) !important;
-}
+
 .section-information {
   height: 200px;
   background-color: black;
