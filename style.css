@@ -144,7 +144,7 @@ body {
   height: 500px;
   min-width: 350px;
 }
-#Name {
+#name {
   width: 300px !important;
   height: 40px !important;
   background-color: rgb(180 180 180 / 72%);
@@ -152,7 +152,7 @@ body {
   color: white;
   padding: 10px;
 }
-#Email {
+#email {
   width: 300px !important;
   height: 40px !important;
   background-color: rgb(180 180 180 / 72%);
@@ -160,7 +160,7 @@ body {
   color: white;
   padding: 10px;
 }
-#Message {
+#message {
   width: 315px !important;
   height: 80px !important;
   background-color: rgb(180 180 180 / 72%);

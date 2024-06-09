@@ -2,11 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="Kuvaus tänne!" />
     <meta name="format-detection" content="telephone=no" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <meta property="og:title" content="Yhteystiedot - Valokuva Roininen" />
+    <script
+      src="https://kit.fontawesome.com/ef35fbb7e1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css" />
     <link
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       rel="stylesheet"
@@ -31,24 +40,20 @@
         </nav>
       </div>
       <div>
+        <section class="containerr">
         <div class="contact-container">
           <div class="contact-text">
             <h1>Ota yhteyttä!</h1>
           </div>
           <div class="form-container">
-            <form
-              id="fcf-form-id"
-              class="fcf-form-class"
-              method="post"
-              action="contact-form-process.php"
-            >
+            <form id="fcf-form-id" class="fcf-form-class" method="post">
               <div class="fcf-form-group">
                 <label for="Name" class="fcf-label">Nimesi</label>
                 <div class="fcf-input-group">
                   <input
                     type="text"
-                    id="Name"
-                    name="Name"
+                    id="name"
+                    name="name"
                     class="fcf-form-control center-text"
                     required
                   />
@@ -62,8 +67,8 @@
                 <div class="fcf-input-group">
                   <input
                     type="email"
-                    id="Email"
-                    name="Email"
+                    id="email"
+                    name="email"
                     class="fcf-form-control center-text"
                     required
                   />
@@ -74,8 +79,8 @@
                 <label for="Message" class="fcf-label">Viestisi</label>
                 <div class="fcf-input-group">
                   <textarea
-                    id="Message"
-                    name="Message"
+                    id="message"
+                    name="message"
                     class="fcf-form-control"
                     rows="6"
                     maxlength="3000"
@@ -89,15 +94,14 @@
                   type="submit"
                   id="fcf-button"
                   class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block"
-                >
-                  Lähetä viesti
-                </button>
+                >Lähetä</button>
               </div>
             </form>
           </div>
         </div>
       </div>
     </div>
+</section>
     <section>
       <div class="section-information">
         <h2>Jani Roininen</h2>
@@ -350,5 +354,8 @@
         </div>
       </div>
     </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>
