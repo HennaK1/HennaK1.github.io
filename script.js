@@ -91,3 +91,7 @@ function SubmitForm(e) {
       console.log(body);
     });
 }
+document.addEventListener("DOMContentLoaded", function () {
+  let button = document.getElementById("fcf-button");
+  button.textContent = "Lähetä"; // Set the button text
+});
