@@ -145,8 +145,8 @@ body {
   min-width: 350px;
 }
 #Name {
-  width: 300px;
-  height: 25px;
+  width: 300px !important;
+  height: 40px !important;
   background-color: rgb(180 180 180 / 72%);
   font-size: 18px;
   color: white;
@@ -154,7 +154,7 @@ body {
 }
 #Email {
   width: 300px !important;
-  height: 25px;
+  height: 40px !important;
   background-color: rgb(180 180 180 / 72%);
   font-size: 18px;
   color: white;
@@ -208,6 +208,7 @@ button#fcf-button:hover {
 .section-information h2 {
   color: white;
   margin: 0;
+  font-family: "Roboto Slab";
 }
 .icon-txt {
   display: flex;
