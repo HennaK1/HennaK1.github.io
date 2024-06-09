@@ -292,4 +292,7 @@ a.icon-link {
   .nav-links2 li a {
     font-size: 12px;
   }
+  button#fcf-button {
+    width: 200px;
+  }
 }
