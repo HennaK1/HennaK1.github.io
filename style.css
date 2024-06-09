@@ -198,6 +198,9 @@ input[type="submit"].fcf-btn-block {
   font-family: "Roboto" !important;
   color: white !important;
   border: 1px solid black !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 input {
   -webkit-appearance: none;
@@ -334,10 +337,13 @@ a:active {
     min-height: 600px;
   }
   .nav-links2 li a {
-    font-size: 10px;
+    font-size: 12px;
   }
   button#fcf-button {
     width: 100px !important;
+  }
+  .contact-h1 {
+    font-size: 25px;
   }
 }
 @media screen and (max-width: 375px) {
