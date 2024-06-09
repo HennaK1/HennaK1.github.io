@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 body {
   margin: 0;
   padding: 0;
@@ -9,7 +11,7 @@ body {
   left: 50%;
   top: 15%;
   transform: translate(-50%, -50%);
-  font-family: "Roboto Slab";
+  font-family: "Sans serif";
   text-align: center;
   color: white;
   letter-spacing: 3px;
@@ -162,7 +164,7 @@ body {
 }
 #message {
   width: 315px !important;
-  height: 80px !important;
+  height: 100px !important;
   background-color: rgb(180 180 180 / 72%);
   font-size: 18px;
   color: white;
@@ -188,13 +190,23 @@ button#fcf-button {
   color: black !important; /* Set text color explicitly */
   width: 100px !important;
 }
+.contact-h1 {
+  font-size: 30px;
+}
 input[type="submit"].fcf-btn-block {
   background-color: #979797 !important;
   font-family: "Roboto" !important;
+  color: white !important;
+  border: 1px solid black !important;
+}
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .section-information {
   height: auto; /* Adjust height dynamically based on content */
-  min-height: 200px; /* Minimum height to prevent collapsing */
+  min-height: 220px; /* Minimum height to prevent collapsing */
   background-color: black;
   display: flex;
   justify-content: center; /* Center horizontally */
@@ -217,6 +229,9 @@ input[type="submit"].fcf-btn-block {
 .icon-txt {
   display: flex;
   flex-direction: row;
+}
+.fcf-label {
+  margin-bottom: 0px !important;
 }
 a.icon-link {
   display: flex;
@@ -252,6 +267,12 @@ a:active {
 .frontpage-info {
   height: 100vh;
   background-color: black;
+}
+.copyright {
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+  font-size: 11px;
 }
 
 @media screen and (max-width: 768px) {
@@ -301,6 +322,9 @@ a:active {
   }
   .section-information h2 {
     margin-top: 50px;
+  }
+  .copyright {
+    font-size: 10px;
   }
 }
 
