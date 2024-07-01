@@ -361,7 +361,7 @@ a:active {
   flex-direction: row;
   width: 100%;
   color: white;
-  background: linear-gradient(to top, #000000, #1a1a1a), url(./img/back.jpg);
+  background: linear-gradient(to top, #000000, #1a1a1a);
   background-size: cover;
   flex: 2;
   align-items: center;
@@ -373,6 +373,7 @@ a:active {
   width: 80%;
   margin: auto;
   color: #c8c8c8;
+  margin-right: 0;
 }
 
 .info-img-section {
@@ -404,27 +405,30 @@ footer {
   display: flex;
   justify-content: center;
 }
+/* Media rules */
+
 @media screen and (min-width: 1500px) {
   .info-img-section img {
-    width: 50%;
-    height: 100%;
+    width: 500px;
+    height: 600px;
+    object-fit: contain;
   }
 }
 @media only screen and (max-width: 1499px) and (min-width: 1100px) {
   .info-img-section img {
-    margin-left: 0;
-    width: 50%;
-    height: 100%;
+    width: 300px;
+    height: 400px;
+    object-fit: contain;
   }
 }
 @media only screen and (max-width: 1100px) and (min-width: 700px) {
-  .info-img-section img {
-    margin-left: 0;
-    width: 630px;
-    height: 350px;
-  }
 }
 @media screen and (max-width: 1100px) {
+  .info-text-container2 {
+    width: 80%;
+    margin: auto;
+    color: #c8c8c8;
+  }
   .info-section {
     flex-direction: column;
     align-items: center;
@@ -433,13 +437,19 @@ footer {
     width: 80%;
   }
   .info-img-section {
-    width: 100%;
+    width: 50%;
     margin-left: 0;
     margin-top: 2em;
   }
   .info-img-container {
     text-align: center;
     margin-left: 0;
+  }
+  .info-img-section img {
+    margin-left: 0;
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
   }
 }
 @media screen and (max-width: 768px) {
@@ -518,7 +528,7 @@ footer {
   }
   .section-information {
     flex-direction: column;
-    height: 500px;
+    height: 400px;
   }
   .section-information2 {
     flex-direction: column;
@@ -543,6 +553,15 @@ footer {
   }
   .slogan {
     font-size: 15px;
+  }
+  .info-img-section img {
+    margin-left: 0;
+    height: 300px;
+    width: 300px;
+    object-fit: contain;
+  }
+  .info-text-container2 {
+    font-size: 12px;
   }
 }
 @media screen and (min-width: 460px) and (max-width: 529px) {
