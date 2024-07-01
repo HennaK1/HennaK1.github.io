@@ -76,7 +76,7 @@ body {
 .bg-img {
   /* The image used */
   background: linear-gradient(to top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.7)),
-    url("../images/headerImg2.webp") no-repeat center center;
+    url("../images/headerImg.webp") no-repeat center center;
   min-height: 100vh;
   /* Center and scale the image nicely */
   background-position: center;
@@ -452,6 +452,7 @@ footer {
   display: flex;
   flex: 2;
   margin-top: 2rem;
+  align-items: center;
 }
 .thumbnail {
   position: relative;
@@ -490,6 +491,23 @@ footer {
 }
 
 /* Media rules */
+@media screen and (min-width: 2000px) {
+  .nav-links li a {
+    font-size: 23px;
+  }
+  .slogan {
+    font-size: 25px;
+  }
+  .info-text-container2 {
+    font-size: 20px;
+  }
+  .info-text-container3 {
+    max-width: 40%;
+  }
+  .section-information h2 {
+    font-size: 32px;
+  }
+}
 
 @media screen and (min-width: 1500px) {
   .info-img-section img {
@@ -497,12 +515,18 @@ footer {
     height: 600px;
     object-fit: contain;
   }
+  .container {
+    width: 1500px;
+  }
 }
 @media only screen and (max-width: 1499px) and (min-width: 1100px) {
   .info-img-section img {
     width: 300px;
     height: 400px;
     object-fit: contain;
+  }
+  .section-information h2 {
+    font-size: 24px;
   }
 }
 @media only screen and (max-width: 1100px) and (min-width: 700px) {
@@ -643,9 +667,12 @@ footer {
     height: 300px;
     width: 300px;
     object-fit: contain;
+    margin-top: 2rem;
   }
   .info-text-container2 {
     font-size: 12px;
+  }
+  .info-section {
   }
 }
 @media screen and (min-width: 460px) and (max-width: 529px) {
