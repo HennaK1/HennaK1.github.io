@@ -84,7 +84,7 @@ body {
 .bg-img2 {
   /* The image used */
   background: linear-gradient(to top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.7)),
-    url("../images/contactheaderImg.webp") no-repeat center center;
+    url("../images/contactheaderImg2.webp") no-repeat center center;
   min-height: 100vh;
   /* Center and scale the image nicely */
   background-position: center;
@@ -187,7 +187,7 @@ body {
   font-size: 18px;
 }
 .contact-container {
-  background-color: rgba(0, 0, 0, 0.686);
+  background-color: rgb(0 0 0 / 73%);
   width: 50%;
   height: 500px; /* Adjust height as needed */
   min-width: 350px;
@@ -356,12 +356,40 @@ a:active {
   font-family: "Roboto Slab", serif;
   margin-top: 2em;
 }
+.info-text-section2 {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto Slab", serif;
+  margin-top: 2em;
+}
+.info-text-section3 {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto Slab", serif;
+  display: flex;
+  flex: 2;
+  min-height: 500px;
+}
 .info-section {
   display: flex;
   flex-direction: row;
   width: 100%;
   color: white;
   background: linear-gradient(to top, #000000, #1a1a1a);
+  background-size: cover;
+  flex: 2;
+  align-items: center;
+}
+.info-section2 {
+  background: url("../images/building.webp") no-repeat center center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: white;
   background-size: cover;
   flex: 2;
   align-items: center;
@@ -374,6 +402,13 @@ a:active {
   margin: auto;
   color: #c8c8c8;
   margin-right: 0;
+}
+.info-text-container3 {
+  width: 60%;
+  margin: auto;
+  color: #c8c8c8;
+  background: #000000d1;
+  padding: 3rem;
 }
 
 .info-img-section {
@@ -394,6 +429,8 @@ footer {
   z-index: 0;
   margin: 0;
   display: flex;
+  flex: 3;
+  max-height: 400px;
 }
 .info-img-section img {
   margin-left: 0;
